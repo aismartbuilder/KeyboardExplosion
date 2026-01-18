@@ -174,7 +174,10 @@ export default function KeyboardScroll() {
             )}
 
             {/* Sticky Canvas */}
-            <div className="sticky top-0 left-0 h-screen w-full flex items-center justify-center">
+            <div
+                className="sticky h-screen w-full flex items-center justify-center"
+                style={{ top: 0, left: 0 }}
+            >
                 <canvas
                     ref={canvasRef}
                     className="w-full h-full"
